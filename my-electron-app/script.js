@@ -71,7 +71,7 @@ function shareFile() {
     // Send the selected device and file path to the C++ process
     ipcRenderer.send('start-share', { device: selectedDevice, file: selectedFile.path });
     console.log('Sent file to main process:', { device: selectedDevice, file: selectedFile.path }); 
-    alert('File sharing initiated for ' + selectedFile.name + ' to ' + selectedDevice);
+    //alert('File sharing initiated for ' + selectedFile.name + ' to ' + selectedDevice);
 }
 
 
