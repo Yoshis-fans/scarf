@@ -1,0 +1,111 @@
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.container {
+    padding: 20px;
+    width:100%;
+}
+.dashboard{
+
+    padding: 20px;
+    width:100%;
+
+}
+hr {
+    width: 90%; 
+    margin: 10px 0; 
+    border: none; 
+    height: 1px; 
+    background-color: #333; /* Line color */
+}
+
+
+header {
+    display: block;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+header img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column; /* Ensure items are stacked vertically */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: flex-start; /* Ensure items are aligned from the left edge */
+    gap: 20px; /* Space between the select containers */
+    margin-top: 20px;
+}
+
+/* Adjust the width and padding for each select container */
+.select-container {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    padding: 10px; 
+    width: 250px; 
+    background-color: #ffffff;
+}
+
+.select-container svg {
+    margin-right: 10px;
+}
+
+.select-container select,
+.select-container button {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    outline: none;
+}
+
+.select-container select:hover,
+.select-container button:hover {
+    background-color: #f2ecec;
+    border-radius: 20px;
+}
+
+.status {
+    margin-top: 20px;
+}
+
+.status button {
+    background-color: #DC0000;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    width: 200px;
+}
+
+.status button:hover {
+    background-color: #B80000;
+}
+
+#progressBar {
+    height: 30px;
+    width: 0;
+    background-color: green;
+    color: white;
+    text-align: center;
+    transition: width 0.5s ease;
+}
